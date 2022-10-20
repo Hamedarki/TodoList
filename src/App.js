@@ -18,6 +18,11 @@ const [status,setStatus] =useState('all')
 
 const [filterdTodos,setFilterdTodos] = useState([])
 
+const [open,setOpen] = useState(false)
+
+const changeNav = ()=>{
+  setOpen(!open)
+}
 
 const filterHandler = () =>{
   switch(status){
@@ -35,14 +40,14 @@ const filterHandler = () =>{
 
 useEffect(()=>{
   filterHandler();
-},[todos , status])
+},[])
 
 
 
   return(
     <React.Fragment>
-      <Navbar />
-      <div className={'bg-bg-color lg:m-auto xl:flexCol xl:gap-8 xl:px-8 xl:py-7 xl:justify-start xl:h-screen xl:m-auto xl:w-width780p flex flex-col w-auto justify-start items-center p-6 gap-8  h-height95%  '}>
+      <Navbar open={open} setOpen={setOpen} changeNav={changeNav} />
+      <div className={`${open ? 'h-height85%' : 'h-height95%'} bg-bg-color lg:m-auto xl:flexCol xl:gap-8 xl:px-8 xl:py-7 xl:justify-start xl:h-screen xl:m-auto xl:w-width780p flex flex-col w-auto justify-start items-center p-6 gap-8  h-height95%  `}>
         <Sort/>
         <Form inputText={inputText} setInputText={setInputText} filterdTodos={filterdTodos} filterHandler={filterHandler} todos={todos} setTodos={setTodos} status={status} setStatus={setStatus}/>
         <TodoList inputText={inputText} todos={todos} setTodos={setTodos} filterdTodos={filterdTodos} setInputText={setInputText}/>

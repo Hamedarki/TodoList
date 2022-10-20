@@ -10,6 +10,7 @@ module.exports = {
     },
    
     extend: {
+      
       colors:{
         'primary': '#faedcd',
         "secondary" : '#1d3557',
@@ -27,7 +28,10 @@ module.exports = {
         'border-1px': '1px'
       },
       height:{
+
+        'height85%': '85%',
         'height5%': '5%',
+        'height15%': '15%',
         'height95%': '95%',
       }
     },

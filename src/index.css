@@ -5,7 +5,9 @@
 
 
 
-
+.navbar_button{
+  @apply p-1 w-width100p rounded-sm relative right-auto left-auto  flex-row justify-between overflow-hidden bg-red-700
+}
 
 
 
