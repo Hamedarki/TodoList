@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../App.css'
-import {BsFillArrowRightCircleFill} from 'react-icons/bs'
  const Navbar = ({open , setOpen , changeNav}) => {
   
 
