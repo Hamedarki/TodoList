@@ -13,25 +13,31 @@ module.exports = {
       
       colors:{
         'primary': '#faedcd',
-        "secondary" : '#1d3557',
+        'secondary' : '#0b114d',
         'white-smoke': '#f5f3f4',
         'blue' : '#3f37c9',
-        'light-blue':'#219ebc',
-        'bg-color': '#bbbbf9'
+        'light-blue':'#204ca5',
+        'bg-color': '#92B4EC'
       },
       width:{
         'width100p': '100%',
         'width90p': '90%',
-        'width780p' : '780px'
+        'width700p' : '700px'
       },
       borderWidth:{
         'border-1px': '1px'
       },
       height:{
-
+        'height100vh': '100vh',
+        'height95vh': '95vh',
+        'height90vh': '90vh',
+        'height10vh': '10vh',
+        'height5vh': '5vh',
         'height85%': '85%',
+        'height85vh': '85vh',
         'height5%': '5%',
         'height15%': '15%',
+        'height15vh': '15vh',
         'height95%': '95%',
       }
     },

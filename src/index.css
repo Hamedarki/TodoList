@@ -4,9 +4,13 @@
 
 
 
-
+/* 
 .navbar_button{
-  @apply p-1 w-width100p rounded-sm relative right-auto left-auto  flex-row justify-between overflow-hidden bg-red-700
+  @apply p-1 w-width100p rounded-sm relative xl:right-auto xl:left-auto  xl:flex-row flex-row justify-between overflow-hidden bg-red-700 
+} */
+
+.modal{
+@apply w-12 bg-red-400 rounded-md  absolute left-auto right-auto translate-x-2/4 translate-y-2/4
 }
 
 
